@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.11.35327.3
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web_app_mensajes_ws", "web_app_mensajes_ws\web_app_mensajes_ws.csproj", "{11F66CBD-8A83-46F5-A6E4-8BF196868457}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "datos", "datos\datos.csproj", "{46713FF5-EEDF-4C46-8ED3-A5AF772CF52B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web_app_mensajes", "web_app_mensajes\web_app_mensajes.csproj", "{593E8964-90E4-4A4A-8C70-496D010AA1BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{11F66CBD-8A83-46F5-A6E4-8BF196868457}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11F66CBD-8A83-46F5-A6E4-8BF196868457}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11F66CBD-8A83-46F5-A6E4-8BF196868457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46713FF5-EEDF-4C46-8ED3-A5AF772CF52B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46713FF5-EEDF-4C46-8ED3-A5AF772CF52B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46713FF5-EEDF-4C46-8ED3-A5AF772CF52B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46713FF5-EEDF-4C46-8ED3-A5AF772CF52B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593E8964-90E4-4A4A-8C70-496D010AA1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593E8964-90E4-4A4A-8C70-496D010AA1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593E8964-90E4-4A4A-8C70-496D010AA1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593E8964-90E4-4A4A-8C70-496D010AA1BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
