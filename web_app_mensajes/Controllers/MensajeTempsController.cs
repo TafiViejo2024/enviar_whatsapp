@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.Entity;
 using System.IO;
@@ -135,7 +136,10 @@ namespace web_app_mensajes.Controllers
         static void Enviar_Whatsapps(string tel)
         {
             string url = "https://graph.facebook.com/v22.0/569259382937171/messages"; // Endpoint de Meta API
-            string token = "EAASYXrmdB08BO1auQOFJQzqAq3zySezgHUG4Q2KNrcvLlYM9xZCqtRSg9b1DZBSfBUZBCrh12zR6IJwSSJZCCSvgjhirq7J3HPosQzXGN5OGTs0llgzZAf0TxAO8I9zTfpck1xcDudtvVx1dlC4bq5fsZCkyxBcRBMa0mJz0R6VgWo5slUm2egLpq6gbS92MclKoBTcxO0TX6TWsLURfMEqKZC0ZCGER5jvEBngu89dD";
+            //string token = "EAASYXrmdB08BO1auQOFJQzqAq3zySezgHUG4Q2KNrcvLlYM9xZCqtRSg9b1DZBSfBUZBCrh12zR6IJwSSJZCCSvgjhirq7J3HPosQzXGN5OGTs0llgzZAf0TxAO8I9zTfpck1xcDudtvVx1dlC4bq5fsZCkyxBcRBMa0mJz0R6VgWo5slUm2egLpq6gbS92MclKoBTcxO0TX6TWsLURfMEqKZC0ZCGER5jvEBngu89dD";
+
+            string token = ConfigurationManager.AppSettings["token"];
+
             string toNumber = "+541132542221"; // Número de destino con código de país
             string jsonData = "{ \"messaging_product\": \"whatsapp\", \"to\": \"" + "+" + tel + "\", \"type\": \"template\", \"template\": { \"name\": \"hello_world\", \"language\": { \"code\": \"en_US\" } } }";
 
