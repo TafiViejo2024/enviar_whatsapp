@@ -63,7 +63,7 @@ namespace web_app_mensajes.Controllers
         }
 
         // GET: MensajeTemps/Edit/5
-        public ActionResult Edit(int? id)
+        public ActionResult Edit(int? id,string editar)
         {
             if (id == null)
             {
@@ -72,8 +72,11 @@ namespace web_app_mensajes.Controllers
             MensajeTemp mensajeTemp = db.MensajeTemp.Find(id);
 
             var telefono = mensajeTemp.telefono;
-
-            Enviar_Whatsapps(telefono);
+            if (editar=="no") {
+                Enviar_Whatsapps(telefono);
+                return RedirectToAction("Index");
+            }
+            
 
             if (mensajeTemp == null)
             {

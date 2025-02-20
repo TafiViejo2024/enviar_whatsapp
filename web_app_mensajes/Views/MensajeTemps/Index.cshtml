@@ -1,15 +1,18 @@
 ﻿@model IEnumerable<web_app_mensajes.MensajeTemp>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Principal";
 }
 
-<h2>Index</h2>
 
+<br />
 <p>
-    @Html.ActionLink("Create New", "Create")
+   
+    @Html.ActionLink("Agregar teléfono", "Create", null, new { @class = "btn btn-primary" })
+
 </p>
-<table class="table">
+<br />
+<table class="table table-striped table-hover table-bordered" >
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.telefono)
@@ -17,7 +20,7 @@
         <th>
             @Html.DisplayNameFor(model => model.apellido)
         </th>
-        <th></th>
+        <th>Accion</th>
     </tr>
 
 @foreach (var item in Model) {
@@ -29,9 +32,10 @@
             @Html.DisplayFor(modelItem => item.apellido)
         </td>
         <td>
-            @Html.ActionLink("Llamar o editar", "Edit", new { id=item.iD }) |
-            @Html.ActionLink("Details", "Details", new { id=item.iD }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.iD })
+            @Html.ActionLink("Llamar", "Edit", new { id = item.iD, editar = "no" }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Editar", "Edit", new { id = item.iD ,editar="si"}, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Detalle", "Details", new { id = item.iD }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Borrar", "Delete", new { id = item.iD }, new { @class = "btn btn-primary" })
         </td>
     </tr>
 }
