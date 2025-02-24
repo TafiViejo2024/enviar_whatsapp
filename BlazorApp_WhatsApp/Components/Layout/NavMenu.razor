@@ -1,9 +1,14 @@
 ﻿@using MudBlazor
 
 <MudNavMenu>
-    <MudNavLink Href="/" Icon="mdi-home" Match="NavLinkMatch.All">Inicio</MudNavLink>
-    <MudNavLink Href="/perfil" Icon="mdi-account">Perfil</MudNavLink>
-    <MudNavLink Href="/configuracion" Icon="mdi-cog">Configuración</MudNavLink>
-    <MudNavLink Href="/noticias" Icon="mdi-newspaper">Noticias</MudNavLink>
-    <MudNavLink Href="/soporte" Icon="mdi-help-circle">Soporte</MudNavLink>
+
+    <MudNavLink Disabled="true" Icon="@Icons.Material.Filled.People">Mensajes WhatsApp</MudNavLink>
+    <MudNavLink Match="NavLinkMatch.All" Href="" Icon="@Icons.Material.Filled.Home">Panel</MudNavLink>
+    <MudNavLink Match="NavLinkMatch.All" Href="" Icon="@Icons.Material.Filled.Group">Contactos</MudNavLink>     
+    <MudNavLink Match="NavLinkMatch.All" Href="" Icon="@Icons.Material.Filled.ContactMail">Mensajes</MudNavLink>
+    <MudNavLink Match="NavLinkMatch.All" Href="" Icon="@Icons.Material.Filled.ContactMail">Usuarios</MudNavLink>
+
 </MudNavMenu>
+@code {
+   
+}

@@ -1,0 +1,246 @@
+﻿contact
+Everything about your Contacts
+
+
+
+GET
+/contacts
+Get all the contacts
+
+
+POST
+/contacts
+Add a new contact
+
+
+PUT
+/contacts/{wa_id}
+Update a new contact
+
+
+GET
+/contacts/{wa_id}
+Find contact by phone number
+
+
+DELETE
+/contacts/{wa_id}
+Delete a contact
+
+
+POST
+/contacts/{wa_id}/toggle-bot
+Update bot status
+
+
+GET
+/custom-fields
+Get all custom fields
+
+
+POST
+/custom-fields
+Create a new custom field
+
+
+PUT
+/custom-fields/{id}
+Update a custom field
+
+
+DELETE
+/custom-fields/{id}
+Delete a custom field
+
+label
+Everything about your Labels
+
+
+
+GET
+/labels
+Get all created labels
+
+
+POST
+/labels
+Create a new label
+
+
+GET
+/labels/{id}
+Get label by ID
+
+
+PUT
+/labels/{id}
+Update an existing label
+
+
+DELETE
+/labels/{id}
+Delete a label
+
+
+POST
+/labels/search
+Search for a label by name
+
+user
+Operations about user
+
+
+
+GET
+/user
+Get user information
+
+whatsapp
+WhatsApp operations
+
+
+
+POST
+/whatsapp-messages
+Send a WhatsApp text message
+
+
+GET
+/whatsapp-messages/{wa_id}
+Load conversation by Phone Number
+
+
+POST
+/whatsapp-messages/send-template
+Send a WhatsApp template (it can be used to initiate a conversation)
+
+
+POST
+/whatsapp-messages/attachment
+Send a media file in a conversation
+
+
+POST
+/whatsapp-messages/change-status
+Change the status of a conversation or transfer it
+
+campaign
+Everything about your campaigns
+
+
+
+GET
+/campaigns
+Retrieve campaign list
+
+
+GET
+/campaigns/{campaign_id}
+Load campaign by campaign_id
+
+flows
+Operations related to WhatsApp flows
+
+
+
+GET
+/whatsapp-flows
+Retrieve WhatsApp Flows
+
+
+POST
+/whatsapp-flows
+Send a WhatsApp Flow in a Message
+
+
+GET
+/whatsapp-flows/{flow_id}/responses
+Retrieve Responses for a Specific WhatsApp Flow
+
+
+POST
+/whatsapp-flows/{flow_id}/assets
+Retrieve Flow assets
+
+chatbot
+Operaciones relacionadas con chatbots
+
+
+
+POST
+/chat-bot/update-variable-responses
+Actualizar respuestas de variables del chatbot
+
+workflow
+Operations related to workflow statuses
+
+
+
+GET
+/workflow-statuses
+Obtener estados de flujos de trabajo
+
+dashboard
+Operaciones relacionadas con las métricas del dashboard
+
+
+
+GET
+/dashboard/metrics/online-agents
+Obtener agentes en línea
+
+
+GET
+/dashboard/metrics/total-campaigns
+Obtener total de campañas
+
+
+GET
+/dashboard/metrics/consolidated-conversations
+Obtener conversaciones consolidadas
+
+
+GET
+/dashboard/metrics/agent-conversations
+Obtener conversaciones por agente
+
+
+GET
+/dashboard/metrics/contacts
+Obtener métricas de contactos
+
+
+GET
+/dashboard/metrics/messages
+Obtener métricas de mensajes
+
+
+GET
+/dashboard/metrics/messages-bot
+Obtener métricas de mensajes del chatbot
+
+
+GET
+/metrics
+Obtener métricas de agentes
+
+templates
+
+
+GET
+/whatsapp-templates
+Get created templates
+
+
+GET
+/whatsapp-templates/{template_uuid}
+Find template by UUID
+
+phone-numbers
+
+
+GET
+/whatsapp-numbers
+Get phone numbers linked to the Wasapi account
+
+
