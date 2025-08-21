@@ -32,7 +32,7 @@
             @Html.DisplayFor(modelItem => item.apellido)
         </td>
         <td>
-            @Html.ActionLink("Llamar", "Edit", new { id = item.iD, editar = "no" }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Enviar", "Edit", new { id = item.iD, editar = "no" }, new { @class = "btn btn-primary" }) |
             @Html.ActionLink("Editar", "Edit", new { id = item.iD ,editar="si"}, new { @class = "btn btn-primary" }) |
             @Html.ActionLink("Detalle", "Details", new { id = item.iD }, new { @class = "btn btn-primary" }) |
             @Html.ActionLink("Borrar", "Delete", new { id = item.iD }, new { @class = "btn btn-primary" })
